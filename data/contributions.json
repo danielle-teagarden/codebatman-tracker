@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lastUpdated": "2025-06-28T08:45:00Z",
-    "totalContributions": 1,
-    "totalOrganizations": 1
+    "lastUpdated": "2025-06-28T12:00:00Z",
+    "totalContributions": 3,
+    "totalOrganizations": 2
   },
   "contributions": [
     {
@@ -73,6 +73,137 @@
           "type": "fork", 
           "url": "https://github.com/danielle-teagarden/chooser",
           "description": "Fork with working implementation"
+        }
+      ]
+    },
+    {
+      "id": "a11y-broken-link-fix-2025-06",
+      "organization": "The A11Y Project",
+      "project": "a11yproject.com",
+      "githubUrl": "https://github.com/a11yproject/a11yproject.com",
+      "issueNumber": 1478,
+      "issueUrl": "https://github.com/a11yproject/a11yproject.com/issues/1478",
+      "pullRequestNumber": 1625,
+      "pullRequestUrl": "https://github.com/a11yproject/a11yproject.com/pull/1625",
+      "title": "Fix broken internal link in Jammy award announcement",
+      "description": "Fixed a broken internal link that was using absolute URL instead of relative path, improving site reliability",
+      "status": "submitted",
+      "dateSubmitted": "2025-06-28",
+      "category": "bug-fix",
+      "impact": "medium",
+      "timeInvested": "1 hour",
+      "whatTheyAskedFor": [
+        "Fix broken links identified in issue #1478",
+        "Update links to use proper paths"
+      ],
+      "whatWeDelivered": [
+        "Fixed broken internal link in Jammy award announcement",
+        "Changed from absolute URL to relative path",
+        "Comprehensive analysis of all reported broken links",
+        "Found most links were already fixed in previous PRs"
+      ],
+      "technicalSkillsUsed": [
+        "Markdown link syntax",
+        "Git workflow for open source",
+        "Link validation and testing",
+        "Issue analysis and triage"
+      ],
+      "toolsLeveraged": [
+        "Python for link checking scripts",
+        "ripgrep for searching codebase",
+        "GitHub CLI for PR creation",
+        "Web search for link verification"
+      ],
+      "challengesSolved": [
+        "Discovered most reported links were already fixed",
+        "Identified the remaining broken link",
+        "Followed proper fork and PR etiquette",
+        "Created focused, single-purpose PR"
+      ],
+      "learningsAndInsights": [
+        "Importance of checking if issues are still current",
+        "One PR per issue is best practice",
+        "Small fixes are valuable contributions",
+        "Always use relative paths for internal links"
+      ],
+      "proofLinks": [
+        {
+          "type": "pull-request",
+          "url": "https://github.com/a11yproject/a11yproject.com/pull/1625",
+          "description": "PR fixing broken internal link"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/a11yproject/a11yproject.com/issues/1478",
+          "description": "Original issue reporting broken links"
+        }
+      ]
+    },
+    {
+      "id": "a11y-link-checker-2025-06",
+      "organization": "The A11Y Project",
+      "project": "a11yproject.com",
+      "githubUrl": "https://github.com/a11yproject/a11yproject.com",
+      "issueNumber": 1521,
+      "issueUrl": "https://github.com/a11yproject/a11yproject.com/issues/1521",
+      "pullRequestNumber": 1626,
+      "pullRequestUrl": "https://github.com/a11yproject/a11yproject.com/pull/1626",
+      "title": "Add automated broken link checker using Lychee",
+      "description": "Implemented monthly automated link checking with GitHub Actions to prevent future broken links, using the tool specifically requested by maintainers",
+      "status": "submitted",
+      "dateSubmitted": "2025-06-28",
+      "category": "feature",
+      "impact": "high",
+      "timeInvested": "2 hours",
+      "whatTheyAskedFor": [
+        "Implement automated link checking in CI/CD pipeline",
+        "Use Lychee broken link checker (specifically requested)",
+        "Run periodically, not on every commit",
+        "Create single consolidated issue for broken links"
+      ],
+      "whatWeDelivered": [
+        "GitHub Actions workflow for monthly link checking",
+        "Lychee configuration with smart exclusions",
+        "Automated issue creation with markdown reports",
+        "Manual trigger option via workflow_dispatch",
+        "Proper false positive handling"
+      ],
+      "technicalSkillsUsed": [
+        "GitHub Actions workflow syntax",
+        "YAML configuration",
+        "CI/CD pipeline design",
+        "Lychee link checker configuration",
+        "Issue automation with GitHub Actions"
+      ],
+      "toolsLeveraged": [
+        "Lychee broken link checker",
+        "GitHub Actions",
+        "peter-evans/create-issue-from-file action",
+        "YAML validators"
+      ],
+      "challengesSolved": [
+        "Configured monthly scheduled runs with cron",
+        "Set up build step before link checking",
+        "Created smart exclusions for false positives",
+        "Implemented single issue creation pattern",
+        "Added appropriate labels and assignees"
+      ],
+      "learningsAndInsights": [
+        "Read issue discussions to find tool preferences",
+        "Separate PRs for different issues is crucial",
+        "Automation prevents future manual work",
+        "Link checkers need careful false positive handling"
+      ],
+      "proofLinks": [
+        {
+          "type": "pull-request",
+          "url": "https://github.com/a11yproject/a11yproject.com/pull/1626",
+          "description": "PR implementing automated link checker"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/a11yproject/a11yproject.com/issues/1521",
+          "description": "Issue requesting automated link checking"
         }
       ]
     }
