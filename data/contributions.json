@@ -1,10 +1,149 @@
 {
   "metadata": {
-    "lastUpdated": "2025-06-28T12:00:00Z",
-    "totalContributions": 3,
-    "totalOrganizations": 2
+    "lastUpdated": "2025-06-29T12:00:00Z",
+    "totalContributions": 5,
+    "totalOrganizations": 3
   },
   "contributions": [
+    {
+      "id": "perma-bookmarklet-fix-2025-06",
+      "organization": "Harvard Library Innovation Lab",
+      "project": "Perma.cc",
+      "githubUrl": "https://github.com/harvard-lil/perma",
+      "issueNumber": 3601,
+      "issueUrl": "https://github.com/harvard-lil/perma/issues/3601",
+      "pullRequestNumber": 3727,
+      "pullRequestUrl": "https://github.com/harvard-lil/perma/pull/3727",
+      "title": "Fix bookmarklet URL encoding for special characters",
+      "description": "Fixed critical bug where URLs with query parameters, fragments, or special characters were being truncated when saved via the bookmarklet",
+      "status": "submitted",
+      "dateSubmitted": "2025-06-29",
+      "category": "bug-fix",
+      "impact": "high",
+      "timeInvested": "3 hours",
+      "whatTheyAskedFor": [
+        "Fix bookmarklet failure for URLs with special characters",
+        "Ensure query parameters and fragments are preserved",
+        "Debug why URLs were being truncated"
+      ],
+      "whatWeDelivered": [
+        "Proper URL encoding using urllib.parse.urlencode()",
+        "Comprehensive unit tests for various URL types",
+        "Visual demonstration tools showing before/after behavior",
+        "Clear PR with detailed explanation and examples",
+        "Interactive test scripts for verification"
+      ],
+      "technicalSkillsUsed": [
+        "Django URL routing and views",
+        "Python urllib.parse for URL encoding",
+        "Django unit testing framework",
+        "JavaScript bookmarklet debugging",
+        "HTTP parameter encoding principles",
+        "Browser developer tools"
+      ],
+      "toolsLeveraged": [
+        "Django development server",
+        "Python debugging tools",
+        "ripgrep for code search",
+        "GitHub CLI for PR creation",
+        "Interactive Python scripts for demos"
+      ],
+      "challengesSolved": [
+        "Traced bookmarklet flow through Django views",
+        "Identified URL encoding issue in redirect construction",
+        "Created comprehensive test coverage",
+        "Built visual demonstrations for reviewers",
+        "Ensured backward compatibility"
+      ],
+      "learningsAndInsights": [
+        "Always encode URL parameters when constructing redirects",
+        "Visual demonstrations help reviewers understand fixes",
+        "Test with various edge cases (?, &, #, special chars)",
+        "Django's request.GET already decodes parameters"
+      ],
+      "proofLinks": [
+        {
+          "type": "pull-request",
+          "url": "https://github.com/harvard-lil/perma/pull/3727",
+          "description": "PR with fix and comprehensive tests"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/harvard-lil/perma/issues/3601",
+          "description": "Original issue reporting bookmarklet failure"
+        }
+      ]
+    },
+    {
+      "id": "h2o-reading-mode-fix-2025-06",
+      "organization": "Harvard Library Innovation Lab",
+      "project": "H2O",
+      "githubUrl": "https://github.com/harvard-lil/h2o",
+      "issueNumber": 2026,
+      "issueUrl": "https://github.com/harvard-lil/h2o/issues/2026",
+      "pullRequestNumber": 2068,
+      "pullRequestUrl": "https://github.com/harvard-lil/h2o/pull/2068",
+      "title": "Improve reading mode line length on large screens",
+      "description": "Enhanced readability by constraining text line length to optimal reading width (60rem) on large displays, following typography best practices",
+      "status": "submitted",
+      "dateSubmitted": "2025-06-29",
+      "category": "feature",
+      "impact": "high",
+      "timeInvested": "2 hours",
+      "whatTheyAskedFor": [
+        "Improve readability on large screens",
+        "Constrain line length in reading mode",
+        "Follow typography best practices",
+        "Make legal texts easier to read"
+      ],
+      "whatWeDelivered": [
+        "CSS constraints for optimal line length (60rem/~960px)",
+        "Responsive design maintaining mobile experience",
+        "Centered content with proper margins",
+        "Padding for breathing room on larger screens",
+        "Targeted specific reading mode elements"
+      ],
+      "technicalSkillsUsed": [
+        "CSS/SCSS responsive design",
+        "Typography principles for readability",
+        "Media queries and breakpoints",
+        "CSS specificity and cascading",
+        "Legal document formatting requirements",
+        "Cross-browser compatibility"
+      ],
+      "toolsLeveraged": [
+        "Docker for local development",
+        "SCSS preprocessor",
+        "Browser developer tools",
+        "nvm for Node.js version management",
+        "Webpack with legacy OpenSSL support"
+      ],
+      "challengesSolved": [
+        "Set up complex Docker development environment",
+        "Handled legacy webpack configuration",
+        "Applied typography research (45-75 chars optimal)",
+        "Maintained existing responsive behavior",
+        "Tested across different screen sizes"
+      ],
+      "learningsAndInsights": [
+        "Always test changes before submitting PRs",
+        "Legacy projects need special build configurations",
+        "Typography research shows 45-75 chars per line optimal",
+        "Legal texts benefit from constrained line widths"
+      ],
+      "proofLinks": [
+        {
+          "type": "pull-request",
+          "url": "https://github.com/harvard-lil/h2o/pull/2068",
+          "description": "PR implementing reading mode improvements"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/harvard-lil/h2o/issues/2026",
+          "description": "Issue requesting better readability"
+        }
+      ]
+    },
     {
       "id": "cc-chooser-prettier-2025-06",
       "organization": "Creative Commons",
